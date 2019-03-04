@@ -1,0 +1,399 @@
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+body {
+    color: #000000;
+    background-color: #ffffff;
+    font-family: sans-serif;
+    font-size: 16px;
+    line-height: 1.5em;
+
+    /* move to sections & set width to 100% to override background color blocks */
+    width: 96%;
+    padding: 0 2%;
+}
+
+a {
+    text-decoration: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   General styles
+   ========================================================================== */
+body {
+   color: #000000;
+   font-family: 'Montserrat', sans-serif;
+   font-size: 16px;
+   width: 96%;
+   padding: 2%;
+}
+
+.flex-container {
+    display: flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: center;
+}
+
+/* ==========================================================================
+   Custom styles
+   ========================================================================== */
+
+   /* HEADER */
+   header h1 {
+       font-family: 'Montserrat';
+       font-size: 1.875em;
+       font-weight: 700;
+       line-height: 1.4375em;
+       margin: 0;
+       text-transform: uppercase;
+       width: 45%;
+   }
+
+   header span {
+       color: #77a466;
+   }
+
+   nav {
+       display: inline;
+       text-align: right;
+       width: 45%;
+   }
+   .flex-container {
+    display: flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: center;
+}
+
+   .navbar li {
+       display: inline;
+       font-size: .875em;
+       font-weight: 700;
+       padding-left: 2%;
+       text-transform: uppercase;
+   }
+
+   .navbar a {
+       color: #77a466;
+       text-decoration: none;
+   }
+
+   /* HERO */
+   .hero {
+       margin-bottom: 3%;
+   }
+
+   figure {
+       border: 3px solid #77a466;
+       padding: 0;
+       margin: 0 auto;
+   }
+
+   .hero img {
+       width: 100%;
+       height: auto;
+   }
+
+   .hero h2 {
+       color: #77a446;
+       font-size: 1em;
+       padding-top: 1%;
+       text-transform: uppercase;
+   }
+
+   .hero p {
+       font-size: 1em;
+   }
+
+   /* MAIN */
+   .main {
+       height: auto;
+   }
+
+   .specials, .reviews, .contact {
+       border-top: 1px solid lightgrey;
+       border-bottom: 1px solid lightgrey;
+       padding: 0 1%;
+       width: 31.2%;
+   }
+
+   .specials {
+       line-height: 2em;
+   }
+
+   .specials h3, .reviews h3, .contact h3 {
+       text-transform: uppercase;
+   }
+
+   .specials ul {
+       list-style: none;
+       margin-left: 0;
+       padding-left: 0;
+   }
+
+   .specials a {
+       color: #77a466;
+       font-weight: 400;
+   }
+
+   .reviews {
+       border-right: 1px solid lightgrey;
+       border-left: 1px solid lightgrey;
+       padding-bottom: 3%;
+   }
+
+   q {
+       quotes: "“" "”" "‘" "’";
+   }
+   q:before {
+       content: open-quote;
+   }
+   q:after {
+       content: close-quote;
+   }
+
+   /* FOOTER */
+   footer h2 {
+       font-size: 1em;
+       font-weight: 700;
+       padding: 1%;
+       text-align: center;
+       text-transform:uppercase;
+   }
+
+   footer h2 span {
+       color: #77a466;
+       font-family: 'Dancing Script', cursive;
+       font-size: 1.2em;
+       text-transform: lowercase;
+   }
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.hidden {
+    display: none !important;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   ========================================================================== */
+
+@media (max-width: 767px) {
+    .reviews {
+        display: none;
+    }
+
+    .specials, .contact {
+        width: 47.9%;
+    }
+
+    .contact {
+        border-left: 1px solid lightgrey;
+    }
+}
+
+@media (max-width: 505px) {
+    header h1 {
+        text-align: center;
+        width: 100%;
+        margin: auto;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .specials, .contact {
+        width: 100%;
+        margin: auto;
+        text-align: center;
+    }
+
+    .contact {
+        border-left: 0;
+    }
+}
+
+
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after,
+    *:first-letter,
+    *:first-line {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
